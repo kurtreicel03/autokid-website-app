@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description:
     "Trucks, financing, parts and service, all from one trusted partner.",
   icons: {
-    icon: "/images/autokid-logo.png", // Replace with your actual file name
+    icon: "/images/autokid-icon", // Replace with your actual file name
   },
 };
 
