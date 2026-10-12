@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   title: { default: "Autokid Mobility Solutions", template: "%s | Autokid" },
   description:
     "Trucks, financing, parts and service, all from one trusted partner.",
+  icons: {
+    icon: "/images/autokid-bg.png", // Replace with your actual file name
+  },
 };
 
 type RootLayoutProps = {
