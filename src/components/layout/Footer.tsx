@@ -47,7 +47,7 @@ const linkClass =
 
 const Footer: React.FC = () => {
   const footer = (
-    <footer className="flex min-h-[90vh] flex-col justify-between bg-black pt-30 text-white md:pt-50 pb-5">
+    <footer className="flex min-h-[90vh] flex-col justify-between bg-zinc-900 pt-30 text-white md:pt-50 pb-5">
       <Container className="w-full">
         <div className="grid grid-cols-2 gap-x-6 gap-y-12 lg:grid-cols-6 lg:gap-x-10">
           {/* company info */}

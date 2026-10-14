@@ -23,6 +23,7 @@ const Page: React.FC = () => {
       </Section>
     </>
   );
+
   return page;
 };
 
