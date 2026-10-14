@@ -6,7 +6,7 @@ import { cn } from "@/src/lib/cn";
 const slides = [
   { src: "/images/home/highlight3.jpeg", alt: "Autokid truck highlight 1" },
   { src: "/images/home/highlight2.jpeg", alt: "Autokid truck highlight 2" },
-  { src: "/images/home/highlight3.jpeg", alt: "Autokid truck highlight 3" },
+  { src: "/images/home/highlight1.jpeg", alt: "Autokid truck highlight 3" },
 ];
 
 const INTERVAL = 5000;
@@ -27,7 +27,6 @@ const Hero: React.FC = () => {
     mq.addEventListener("change", onChange);
     return () => mq.removeEventListener("change", onChange);
   }, []);
-
   useEffect(() => {
     if (paused || reduceMotion) return;
     const id = setTimeout(() => go(index + 1), INTERVAL);

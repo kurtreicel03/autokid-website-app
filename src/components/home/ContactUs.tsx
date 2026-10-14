@@ -10,13 +10,13 @@ const contactInfo = [
   {
     icon: PhoneCall,
     label: "Call us",
-    value: "+63 917 653 0000",
+    value: "+63 000 999 0000",
     href: "tel:+639176530000",
   },
   {
     icon: Mail,
     label: "Email us",
-    value: "[EMAIL ADDRESS]",
+    value: "support@autokid.com",
     href: "mailto:hello@example.com",
   },
   {
@@ -27,7 +27,7 @@ const contactInfo = [
   {
     icon: Clock,
     label: "Opening hours",
-    value: "[Mon – Sat, 8:00 AM – 5:00 PM]",
+    value: "[Mon – Sat, 8:30 AM – 5 PM]",
   },
 ];
 
