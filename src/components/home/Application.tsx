@@ -6,6 +6,7 @@ import {
   BusFront,
   Hammer,
   Package,
+  Timeline,
   Trash,
   Zap,
 } from "lucide-react";
@@ -83,8 +84,11 @@ const Application: React.FC = () => {
               <h3 className=" text-md font-bold  tracking-wide text-amber-50">
                 {title}
               </h3>
-              <span className="flex size-9 shrink-0 items-center justify-center rounded-md bg-amber-50 transition duration-300 group-hover:bg-primary group-hover:text-primary-content">
-                <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-0.5" />
+              <span className="flex size-9 shrink-0 items-center justify-center transition duration-300 group-hover:-rotate-45  group-hover:-translate-y-1">
+                <ArrowRight
+                  strokeWidth={1.2}
+                  className="size-7  transition-transform duration-300 group-hover:translate-x-0.5 group-hover:text-primary text-amber-50"
+                />
               </span>
             </div>
           </Link>

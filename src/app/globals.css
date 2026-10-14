@@ -41,3 +41,16 @@
   --font-sans: var(--font-avant-garde);
   --font-avant: var(--font-avant-garde);
 }
+
+@theme {
+  --animate-hero-expand: hero-expand 1s linear both;
+
+  @keyframes hero-expand {
+    from {
+      transform: scale(0.72);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+}

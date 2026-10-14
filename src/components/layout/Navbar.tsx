@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
     <header className="fixed inset-x-0 top-0 z-40 flex items-center justify-between px-4 py-4 sm:px-8 lg:px-12 xl:px-24 2xl:px-40">
       <div
         aria-hidden
-        className="absolute inset-0 -z-10 bg-zinc-900 shadow-2xl backdrop-blur-2xl"
+        className="absolute inset-0 -z-10 bg-zinc-900/40 shadow-2xl backdrop-blur-2xl"
       />
       <Link href="/" aria-label="Autokid home">
         <Image
