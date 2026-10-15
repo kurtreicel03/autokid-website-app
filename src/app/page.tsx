@@ -9,7 +9,7 @@ const Page: React.FC = () => {
   const page = (
     <>
       <Hero />
-      <Section>
+      <Section id="trucks">
         <Application />
       </Section>
       <Section>
@@ -18,7 +18,7 @@ const Page: React.FC = () => {
       <Section>
         <Hub />
       </Section>
-      <Section>
+      <Section id="contact">
         <ContactUs />
       </Section>
     </>

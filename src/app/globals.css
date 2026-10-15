@@ -2,6 +2,16 @@
 @plugin "daisyui";
 @import "tailwind-animations";
 
+html {
+  scroll-padding-top: 6rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 @plugin "daisyui/theme" {
   name: "bumblebee";
   default: false;
