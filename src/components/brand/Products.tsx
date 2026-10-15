@@ -30,7 +30,7 @@ const Products: React.FC = () => {
             key={product.name}
             href={`/brands/tata-motors/${slugify(product.name)}`}
             className={cn(
-              "group flex min-h-0 flex-col overflow-hidden rounded-md bg-base-200 border border-black/10 inset-shadow-xs transition duration-300 hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none",
+              "group flex min-h-0 flex-col overflow-hidden rounded-md bg-amber-50/30 border border-zinc-900/20 inset-shadow-xs transition duration-300 hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none",
               product.layout,
             )}
           >

@@ -2,11 +2,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  ArrowRight,
+  ArrowUpRight,
   BusFront,
   Hammer,
   Package,
-  Timeline,
   Trash,
   Zap,
 } from "lucide-react";
@@ -51,7 +50,7 @@ const Application: React.FC = () => {
         <h2 className="font-heading text-[clamp(32px,5vw,64px)] font-bold leading-[1.05] tracking-tight">
           Discover your own mobility solutions
         </h2>
-        <p className="mx-auto mt-5 max-w-3xl text-sm text-base-content/70  sm:text-lg lg:text-xl">
+        <p className="mx-auto mt-5 max-w-3xl text-sm text-base-content/70 sm:text-lg lg:text-xl">
           From versatile light trucks to heavy-duty fleets, discover your own
           mobility solutions designed to keep your operations moving seamlessly
         </p>
@@ -61,35 +60,36 @@ const Application: React.FC = () => {
         {applicationData.map(({ icon: Icon, title, href, src }) => (
           <Link
             key={title}
-            href={""}
-            className="bg-zinc-900  group w-full rounded-md border border-base-300 bshadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] xl:w-[calc(20%-16px)]"
+            href={href}
+            className="group flex w-full flex-col overflow-hidden rounded-md border border-zinc-900/30 bg-amber-50/30 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-2xl motion-reduce:transition-none sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] xl:w-[calc(20%-16px)]"
           >
             <div className="relative">
-              <div className="relative aspect-4/3 overflow-hidden rounded-t-sm bg-amber-50">
+              <div className="relative aspect-4/3 overflow-hidden">
                 <Image
                   src={src}
                   alt={`${title} truck`}
-                  height={2000}
-                  width={2000}
+                  fill
                   sizes="(min-width: 1280px) 20vw, (min-width: 1024px) 30vw, (min-width: 640px) 40vw, 100vw"
-                  className="object-cover transition duration-500 group-hover:scale-105 motion-reduce:transition-none p-5 bg-white-/30 backdrop-blur-2xl px-5 py-10"
+                  className="object-contain p-5 transition duration-500 group-hover:scale-105 motion-reduce:transition-none"
                 />
               </div>
-              <span className="p-1 absolute -bottom-6 left-5 flex size-52px items-center justify-center rounded-xl border-4 border-base-100 bg-primary text-primary-content">
+              <span className="absolute -bottom-6 left-5 z-10 flex size-13 items-center justify-center rounded-xl border-4 border-base-100 bg-primary text-primary-content">
                 <Icon className="size-6" strokeWidth={1.5} />
               </span>
             </div>
 
-            <div className="flex items-center justify-between gap-3 px-5 pb-5 pt-10 rounded-b-md">
-              <h3 className=" text-md font-bold  tracking-wide text-amber-50">
-                {title}
-              </h3>
-              <span className="flex size-9 shrink-0 items-center justify-center transition duration-300 group-hover:-rotate-45  group-hover:-translate-y-1">
-                <ArrowRight
-                  strokeWidth={1.2}
-                  className="size-7  transition-transform duration-300 group-hover:translate-x-0.5 group-hover:text-primary text-amber-50"
-                />
-              </span>
+            <div className="flex flex-1 flex-col bg-zinc-900 px-5 pb-5 pt-10">
+              <div className="flex items-center justify-between gap-3">
+                <h3 className="text-base font-bold tracking-wide text-amber-50">
+                  {title}
+                </h3>
+                <span className="flex size-9 shrink-0 items-center justify-center transition duration-300 group-hover:-translate-y-1 group-hover:rotate-45">
+                  <ArrowUpRight
+                    strokeWidth={1.2}
+                    className="size-6 text-amber-50 transition-colors duration-300 group-hover:text-primary"
+                  />
+                </span>
+              </div>
             </div>
           </Link>
         ))}
