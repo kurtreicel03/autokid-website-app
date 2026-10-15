@@ -19,7 +19,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-theme="bumblebee" className={`${avantGarde.variable}`}>
+    <html
+      lang="en"
+      data-theme="bumblebee"
+      data-scroll-behavior="smooth"
+      className={`${avantGarde.variable}`}
+    >
       <body className="">
         <Navbar />
         <main>{children}</main>

@@ -98,7 +98,7 @@ const Navbar: React.FC = () => {
       </nav>
 
       <Link
-        href="/contact"
+        href="/#contact"
         className="btn btn-primary hidden font-medium text-primary-content md:inline-flex md:btn-sm lg:btn-md transition-transform duration-300 hover:-translate-y-1"
       >
         Contact us
@@ -131,7 +131,15 @@ const Navbar: React.FC = () => {
               <li key={item.label}>
                 {item.children ? (
                   <details>
-                    <summary>{item.label}</summary>
+                    <summary>
+                      {item.href.startsWith("/#") ? (
+                        <Link href={item.href} onClick={closeDrawer}>
+                          {item.label}
+                        </Link>
+                      ) : (
+                        item.label
+                      )}
+                    </summary>
                     <ul>
                       {item.children.map((child) => (
                         <li key={child.href}>
@@ -151,7 +159,7 @@ const Navbar: React.FC = () => {
             ))}
             <li className="mt-4">
               <Link
-                href="/contact"
+                href="/#contact"
                 onClick={closeDrawer}
                 className="btn btn-accent bg-zinc-900 transition-transform duration-300 text-primary hover:-translate-y-1 justify-center"
               >
