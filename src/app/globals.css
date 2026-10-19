@@ -54,3 +54,48 @@
     }
   }
 }
+
+@keyframes scroll-arrow-tip {
+  from {
+    left: 0.25rem;
+  }
+
+  to {
+    left: calc(100% - 1rem);
+  }
+}
+
+.scroll-arrow-tip {
+  animation: scroll-arrow-tip 1ms linear both;
+  animation-timeline: scroll(inline);
+}
+
+/* Slower movement for the image and text column */
+@keyframes highlight-reveal {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateX(var(--highlight-offset, 3rem));
+  }
+
+  30%,
+  70% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Title appears slightly later */
+@keyframes highlight-title-fade {
+  0%,
+  10%,
+  90%,
+  100% {
+    opacity: 0;
+  }
+
+  40%,
+  60% {
+    opacity: 1;
+  }
+}

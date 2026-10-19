@@ -21,7 +21,7 @@ const Section: React.FC<SectionProps> = ({
     <section
       id={id}
       className={cn(
-        "py-16 md:py-24 px-20 ",
+        "py-16 md:py-24 px-20",
         fullScreen && "flex min-h-screen flex-col justify-center",
         alt && "section-alt",
         className,

@@ -93,5 +93,5 @@ const Explore: React.FC = () => {
 
   return explore;
 };
-
+// we are going to use the same domain, right now when you seach autokid to browser it will show first im just curious what will happen if we update the website because we will use next js deployed in vercel , and the back will use google cloud run, bucket storage, firestore
 export default Explore;

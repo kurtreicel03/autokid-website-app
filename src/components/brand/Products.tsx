@@ -28,7 +28,7 @@ const Products: React.FC = () => {
         {products.map((product) => (
           <Link
             key={product.name}
-            href={`/brands/tata-motors/${slugify(product.name)}`}
+            href={`/products/${product.name.toLowerCase().split(" ").join("-")}`}
             className={cn(
               "group flex min-h-0 flex-col overflow-hidden rounded-md bg-amber-50/30 border border-zinc-900/20 inset-shadow-xs transition duration-300 hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none",
               product.layout,

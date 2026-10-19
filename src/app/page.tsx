@@ -6,6 +6,7 @@ import Explore from "@/src/components/home/Explore";
 import Hub from "@/src/components/home/Hub";
 import ContactUs from "@/src/components/home/ContactUs";
 import Brands from "@/src/components/home/Brands";
+import Branches from "../components/home/Branches";
 const Page: React.FC = () => {
   const page = (
     <>
@@ -13,9 +14,10 @@ const Page: React.FC = () => {
       <Section fullScreen={false} className="min-h-[80vh]">
         <Application />
       </Section>
-      <Section id="/brands" fullScreen={false} className="min-h-[70vh]">
+      <Section id="/brands" fullScreen={false} className="min-h-[80vh]">
         <Brands />
       </Section>
+      <Branches />
       <Section>
         <Explore />
       </Section>

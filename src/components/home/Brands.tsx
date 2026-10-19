@@ -28,7 +28,7 @@ const Brands: React.FC = () => {
       <h2 className="font-heading text-[clamp(32px,5vw,64px)] font-bold uppercase leading-[1.05] tracking-tight">
         Our Brands
       </h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 mt-10 ">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-3 mt-10 ">
         {brandsData.map((data, i) => (
           <Link
             href={`brands/${data.brandName.toLowerCase().split(" ").join("-")}`}
@@ -45,7 +45,7 @@ const Brands: React.FC = () => {
               sizes="100vh"
               className="w-auto h-20"
             />
-            <div className="flex justify-between items-center w-full  text-zinc-900 font-heading font-bold text-xl mt-8 px-1">
+            <div className="flex justify-between items-center w-full  text-zinc-900 font-heading font-bold  text-xl mt-8 px-1">
               <h3>{data.brandName}</h3>
               <span className="flex size-9 shrink-0 items-center justify-center transition duration-300 group-hover:rotate-45  group-hover:-translate-y-1">
                 <ArrowUpRight
